@@ -15,3 +15,4 @@ install:
 build_script:
   - chmod +x ./api-ci/rest/gradlew
   - ./api-ci/rest/gradlew test --info  # запускаем тест, флаг --info позволяет выводить больше информации
+ 
