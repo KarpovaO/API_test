@@ -13,6 +13,7 @@ install:
   - java -jar ./artifacts/app-mbank.jar &
 
 build_script:
-  - chmod +x ./api-ci/rest/gradlew
-  - ./api-ci/rest/gradlew test --info  # запускаем тест, флаг --info позволяет выводить больше информации
+  - ps: cd ./api-ci/rest	# переходим в директорию ./api-ci/rest
+  - chmod +x gradlew
+  - gradlew test --info  # запускаем тест, флаг --info позволяет выводить больше информации
  
